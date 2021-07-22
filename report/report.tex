@@ -1,0 +1,79 @@
+% Arara is a cross-platform automation tool to build pdf what follows are the build rules 
+% arara: pdflatex: { synctex: on }
+% arara: biber
+% arara: makeglossaries
+% arara: makeindex
+% arara: pdflatex: { synctex: on }
+% arara: pdflatex: { synctex: on }
+
+\input{preamble.tex}
+
+\title{
+	Mini Project 1 \\
+	Machine learning, CS, MIU \thanks{Instructor: Anthony Sander}
+}
+
+\author{Baraa Mousa Noufal \and Ivan Krasowski Bissio}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\begin{abstract}
+	\addcontentsline{toc}{section}{Abstract}
+
+    Here goes the abstract
+
+\end{abstract}
+
+\section{About the Dataset}
+Something about the dataset. What it is, where to find it (link), why we chose it...
+
+\subsection{EDA: Exploratory Data Analysis}
+Meaning of the data. Some visualization
+
+\subsection{Data Preparation}
+Feature selection (and why). How we encode categorical.
+
+\subsection{Dataset Split}
+How we split the dataset (train/test)
+
+\section{Models}
+\subsection{Model 1: ...}
+\subsubsection{Presentation}
+\subsubsection{Training}
+\subsubsection{Validation}
+... some more subsubsections
+
+\subsection{Model 2: ...}
+\subsubsection{Presentation}
+\subsubsection{Training}
+\subsubsection{Validation}
+... some more subsubsections (like results)
+
+... + other models (last model: Voting Classifier)
+
+\section{AUCs}
+
+\section{AutoML}
+(+ new AUC, invluding AUC)
+
+
+\section{Best model: model n}
+Why the best
+\subsection{PCA}
+Does it improve?
+
+
+% \subsection{Glossary}
+% The \Gls{latex} typesetting markup language is specially suitable
+% for documents that include \gls{maths}.\footnote{Don't forget to  run makeglossaries yourfile.tex}
+
+% \subsubsection{Acronyms}
+% Define in the glossary file as acronym and then use it as \gls{svm} or \gls{nn}.
+
+% When we use the acronym again \gls{svm}. Notice the usage second time is converted to short form\footnote{check setacronymstyle setting}
+
+\include{appendix.tex}
+\end{document}
