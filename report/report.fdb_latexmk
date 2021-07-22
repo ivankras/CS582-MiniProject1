@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1626925568 "/home/ivankras/Desktop/machine_learning/MiniProject1/report/report.tex" "/home/ivankras/Desktop/machine_learning/MiniProject1/report/report.pdf" "report" 1626925699
+["pdflatex"] 1626980844 "/home/ivankras/Desktop/machine_learning/MiniProject1/report/report.tex" "/home/ivankras/Desktop/machine_learning/MiniProject1/report/report.pdf" "report" 1626980844
   "/etc/texmf/web2c/texmf.cnf" 1626744333 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/ivankras/Desktop/machine_learning/MiniProject1/report/pdftexcmds.sty" 0 -1 0 ""
-  "/home/ivankras/Desktop/machine_learning/MiniProject1/report/report.aux" 1626925568 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/ivankras/Desktop/machine_learning/MiniProject1/report/report.tex" 1626925698 1924 486d1a9a887aaff3d16432e34c5703c1 ""
+  "/home/ivankras/Desktop/machine_learning/MiniProject1/report/report.aux" 1626980844 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/ivankras/Desktop/machine_learning/MiniProject1/report/report.tex" 1626980843 1954 e3631178b2629014cb421dcfb873400d ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1573336935 6902 30fdaf7dc5636b8e3afa306210c45cae ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
@@ -18,7 +18,7 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1626745349 4791332 4e8e08f899b042ff852cd331e135b8e6 ""
   "pdftexcmds.sty" 0 -1 0 ""
   "preamble.tex" 1626925567 1256 f1f3ebc358cd6b4c351a36d201686648 ""
-  "report.tex" 1626925698 1924 486d1a9a887aaff3d16432e34c5703c1 ""
+  "report.tex" 1626980843 1954 e3631178b2629014cb421dcfb873400d ""
   (generated)
   "report.log"
   "/home/ivankras/Desktop/machine_learning/MiniProject1/report/report.log"
