@@ -1,0 +1,7 @@
+\begin{enumerate}
+	\item X: all table except id and result ('satisfaction') columns;  y: 'satisfaction' column
+	\item Since the arrival\_delay feature is highly correlated with the departure\_delay feature, and the missing values are not that many (393 out of 129879: ~0.03\%), we decide to remove the column.
+	\item We see there are 4 categorical features, with no more than 3 unique values each. So, given that none of them is a clear candidate for being weighted, we decide to use one-hot encoding in all of them.
+	\item Finally, we split X and y for training and validating, following a ratio of 80\%/20\% (the dataset is large enough).
+	\subitem \emph{Variables: \textbf{X\_train, X\_val, y\_train, y\_val}}
+\end{enumerate}
