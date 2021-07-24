@@ -1,52 +1,7 @@
-\documentclass[titlepage, 11pt]{article}
-\usepackage[utf8]{inputenc}     %UTF8 encoding
-\usepackage[margin=1in]{geometry}     %margins 
+\usepackage[utf8]{inputenc}     			% UTF8 encoding
+\usepackage[margin=1in]{geometry}     		% margins 
 
-%bibliography
-\usepackage[backend=biber,backref]{biblatex}
-\addbibresource{references.bib}
-
-\usepackage{imakeidx} % Genereate index of terms
-\makeindex[columns=3, columnseprule, title=Alphabetical Index, intoc]
-
-
-\usepackage{booktabs} % For \toprule, \midrule and \bottomrule
-
-\pgfplotsset{compat=1.17}
-% Setup siunitx:
-\sisetup{
-	round-mode          = places, % Rounds numbers
-	round-precision     = 2, % to 2 places
-}
-
-\usepackage{blindtext}
-\usepackage{listings} % style source code
-\usepackage{color}
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
-
-
-
-\lstset{frame=tb,
-	aboveskip=3mm,
-	belowskip=3mm,
-	showstringspaces=false,
-	columns=flexible,
-	basicstyle={\small\ttfamily},
-	numbers=left,
-	numberstyle=\tiny\color{gray},
-	keywordstyle=\color{blue},
-	commentstyle=\color{dkgreen},
-	stringstyle=\color{mauve},
-	breaklines=true,
-	breakatwhitespace=true,
-	tabsize=4
-}
-
-% glossaries
-\usepackage[toc]{glossaries}
-\setglossarystyle{listgroup} 
-\setacronymstyle{long-short}
-\makeglossaries
-\loadglsentries{glossary} % load glossaries from glossary.tex file
+\usepackage{hyperref} 						% href
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{verbatimbox}

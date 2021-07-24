@@ -1,16 +1,9 @@
-% Arara is a cross-platform automation tool to build pdf what follows are the build rules 
-% arara: pdflatex: { synctex: on }
-% arara: biber
-% arara: makeglossaries
-% arara: makeindex
-% arara: pdflatex: { synctex: on }
-% arara: pdflatex: { synctex: on }
-
+\documentclass[titlepage, 11pt]{article}
 \input{preamble.tex}
 
 \title{
-	Mini Project 1 \\
-	Machine learning, CS, MIU \thanks{Instructor: Anthony Sander}
+	\textbf{Mini Project 1} \\
+	Machine learning (CS582), MIU \thanks{Instructor: Anthony Sander}
 }
 
 \author{Baraa Mousa Noufal \and Ivan Krasowski Bissio}
@@ -22,59 +15,55 @@
 
 \begin{abstract}
 	\addcontentsline{toc}{section}{Abstract}
-
-    Here goes the abstract
-
+	\input{abstract.tex}
 \end{abstract}
 
 \section{About the Dataset}
-Something about the dataset. What it is, where to find it (link), why we chose it...
+% Something about the dataset. What it is, where to find it (link), why we chose it...
+The chosen dataset collects information about \href{https://www.kaggle.com/binaryjoker/airline-passenger-satisfaction/download}{Airline Passenger Satisfaction}.
+We opted for this dataset because it had a lot of entries (almost 130000), many columns (including 4 categorical) and it was oriented to a binary classification problem ('satisfied' vs. 'neutral or dissatisfied').
 
 \subsection{EDA: Exploratory Data Analysis}
-Meaning of the data. Some visualization
+\input{eda.tex}
 
 \subsection{Data Preparation}
-Feature selection (and why). How we encode categorical.
-
-\subsection{Dataset Split}
-How we split the dataset (train/test)
+\input{data_prep.tex}
 
 \section{Models}
-% \subsection{Model 1: ...}
-% \subsubsection{Presentation}
-% \subsubsection{Training}
-% \subsubsection{Validation}
-% ... some more subsubsections
+\subsection{KNN}
 \input{model_1.tex}
 
-\subsection{Model 2: ...}
-\subsubsection{Presentation}
-\subsubsection{Training}
-\subsubsection{Validation}
-... some more subsubsections (like results)
+\subsection{Decision Tree}
+\input{model_2.tex}
 
-... + other models (last model: Voting Classifier)
+\subsection{Support Machine Vector}
+\input{model_3.tex}
+
+\subsection{Neural Network}
+\input{model_4.tex}
+
+\subsection{Model 5}
+\input{model_5.tex}
+
+\subsection{Ensemble: Random Forest}
+\input{ensemble.tex}
+
+\subsection{Voting Classifier}
+\input{voting_classifier.tex}
 
 \section{AUCs}
 
 \section{AutoML}
-(+ new AUC, invluding AUC)
-
+% (+ new AUC, including AUC)
 
 \section{Best model: model n}
-Why the best
-\subsection{PCA}
-Does it improve?
+% TODO: complete model
+% Why the best
+\subsection*{PCA}
+% Does it improve?
 
+\section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
+\input{conclusion.tex}
 
-% \subsection{Glossary}
-% The \Gls{latex} typesetting markup language is specially suitable
-% for documents that include \gls{maths}.\footnote{Don't forget to  run makeglossaries yourfile.tex}
-
-% \subsubsection{Acronyms}
-% Define in the glossary file as acronym and then use it as \gls{svm} or \gls{nn}.
-
-% When we use the acronym again \gls{svm}. Notice the usage second time is converted to short form\footnote{check setacronymstyle setting}
-
-\include{appendix.tex}
 \end{document}
