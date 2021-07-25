@@ -17,7 +17,7 @@ Setting \emph{max\_iter}=60000, \emph{loss}="hinge", we plot the validation erro
 \begin{center}
     \captionsetup{type=figure}
     \includegraphics[width=250px]{SGD_complexity.png}
-    \captionof{figure}{Complexity Curve: \emph{alpha} value for SVM}
+    \captionof{figure}{Complexity Curve: \emph{alpha} value for SGD}
 \end{center}
 
 \subsubsection{Model Evaluation}
@@ -26,7 +26,7 @@ With \emph{alpha}=0.01 we plotted a learning curve for the model as the sample s
 \begin{center}
     \captionsetup{type=figure}
     \includegraphics[width=250px]{SGD Learning Curve.png}
-    \captionof{figure}{Learning Curve for SVM}
+    \captionof{figure}{Learning Curve for SGD}
 \end{center}
 This model shows extremely low bias and variance, and an increasing validation score as the data increases.\\
 It is also important to note that this model only took a few seconds to train, which makes it much faster to train than the equivalent linear SVM, and much better suited for very large data.
