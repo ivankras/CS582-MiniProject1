@@ -1,0 +1,16 @@
+After comparing all models, we understand that the best one is the Voting Classifier.
+This makes sense given that all previous models performed quite well, so this additional step (selecting among all of them) was a likely candidate to give similar quality or better results.
+
+\subsection{PCA}
+Principal Component Analysis (PCA) is a technique for reducing the dimensionality of data by finding the components that best fit it, then leaving aside components that are not significant.\\
+Applying PCA on the training data, we detect that over 99.82\% of the signal can be represented by only one dimension (and a second one holds the following 0.14\% of it).
+Given the initial 21 dimensions of the data, we might expect that taking only 2 dimensions representing 99.96\% of the signal would improve the results for any of the models.
+Even more, 3 dimensions hold 99.99\% of the signal, so this is the number we choose.
+
+\subsubsection{Model Evaluation}
+Trying to make profit of the dimensionality reduction, we evaluate the Voting Classifier applied to the updated dataset.
+\begin{itemize}
+    \item Mean Average Error (train): 0.2835790729904527
+    \item Mean Average Error (validation): 0.3135201724668925
+\end{itemize}
+These numbers show that applying PCA on the dataset for reducing the number of features from 21 to 3 decreases the performance of the classifier down to ~70\%.
