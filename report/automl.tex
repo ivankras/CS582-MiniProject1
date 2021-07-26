@@ -5,3 +5,6 @@ If using scikit-learn, the proper toolkit is defined as \href{https://automl.git
 \subsection{Obtaining the Model}
 Simply fitting the training data to the AutoSklearnClassifier gives us an "optimal" model.\\
 In this case (shown by \emph{running model.show\_models}()), the result is an ensemble of several ensembles, involving SVMs, Random Forests, etc.
+
+\subsection{AUC vs best model}
+We calculated the AUC curve from plotting the AutoSKlearnClassifier vs our best model, the Voting Classifier, 
