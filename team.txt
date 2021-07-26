@@ -13,17 +13,14 @@ Tasks:
 . Baraa:
     - Model 1: KNN
     - Model 2: Decision Tree
-    - Model 5: 
-    - Report:
-        * Model 1 (model_1.tex):
-        * Model 2 (model_2.tex):
-        * Model 5 (model_5.tex):
+    - Model 5: Stochastic Gradient Descent
+    - Ensemble: Random Forest
+    - ROC AUC analysis
+    - Report on all done work with models and evaluations
 . Ivan:
     - Model 3: SVM
     - Model 4: NN (MLP)
-    - Report:
-        * General Structure
-        * Abstract
-        * Dataset: EDA, Preparation, Split
-        * Model 3 (model_3.tex): Presentation, Tuning Parameters, Evaluation
-        * Model 4 (model_4.tex):
+    - Voting Classifier
+    - AutoML
+    - PCA analysis for Voting Classifier
+    - Report on all done work with models and evaluations, plus structure and dataset analysis
