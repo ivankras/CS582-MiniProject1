@@ -6,5 +6,11 @@ If using scikit-learn, the proper toolkit is defined as \href{https://automl.git
 Simply fitting the training data to the AutoSklearnClassifier gives us an "optimal" model.\\
 In this case (shown by \emph{running model.show\_models}()), the result is an ensemble of several ensembles, involving SVMs, Random Forests, etc.
 
-\subsection{AUC vs best model}
-We calculated the AUC curve from plotting the AutoSKlearnClassifier vs our best model, the Voting Classifier, 
+\subsection{AutoML vs Voting Classifier}
+We achieved highest accuracy with the Voting Classifier, below is the ROC plot of the Voting classifer vs AutoML
+
+\begin{center}
+    \captionsetup{type=figure}
+    \includegraphics[width=250px]{AUC_automl.png}
+    \captionof{figure}{RF vs AutoML}
+\end{center}
